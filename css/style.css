@@ -4,7 +4,7 @@
     --bg-black: #000000;
     --bg-azure: #B4D0E7;
     --bg-grey: #f7f5f2;
-    --btn-color: #0161fe;
+    --btn-color: #0061fe;
     --btn-color-hover: #3984ff;
 }
 
@@ -19,16 +19,32 @@ html {
 }
 
 body {
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 /* IMPOSTAZIONI CONTAINER  */
-.full-width-row {
-    width: 1180px;
+.large-row {
+    width: 1000px;
+    margin: 0 auto;
 }
+
+/* -------- IMPOSTAZIONI BOTTONI -------- */
+.btn-primary {
+    text-decoration: none;
+    font-weight: 500;
+    background-color: var(--btn-color);
+    color: var(--text-color-white);
+    padding: .65em 1.65em;
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-color-hover);
+}
+
 
 /* --------- HEADER ---------- */
 header {
+    background-color: white;
     height: 70px;
     position: fixed;
     top: 0;
@@ -74,8 +90,56 @@ header {
     text-decoration: none;
 }
 
+/* -------- HERO SECTION --------- */
+.hero-section {
+    background-color: var(--bg-azure);
+    height: 600px;
+}
 
+.hero-title {
+    padding-top: 60px;
+}
 
+.hero-title h1 {
+    font-size: 4.75em;
+}
 
+.text-img {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+}
 
+.text-img .details {
+    flex: 1 1 200px;
+}
 
+.text-img .details p {
+    color: var(--text-color);
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.text-img .details .text-link {
+    display: inline-block;
+    margin: 30px 0 40px;
+
+}
+
+.text-img .details .icon-dwn {
+    font-size: 2.25em;
+    cursor: pointer;
+}
+
+.text-img .details .icon-dwn i {
+    color: var(--text-color);
+}
+
+.text-img .hero-img {
+    flex: 2 1 400px;
+}
+
+.hero-img img {
+    width: 100%;
+}
