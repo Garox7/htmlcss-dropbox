@@ -1,3 +1,13 @@
+:root {
+    --text-color: #1e1919;
+    --text-color-white: #f7f5f2;
+    --bg-black: #000000;
+    --bg-azure: #B4D0E7;
+    --bg-grey: #f7f5f2;
+    --btn-color: #0161fe;
+    --btn-color-hover: #3984ff;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,3 +17,65 @@
 html {
     font-family: 'Blinker', sans-serif;
 }
+
+body {
+    margin-top: 80px;
+}
+
+/* IMPOSTAZIONI CONTAINER  */
+.full-width-row {
+    width: 1180px;
+}
+
+/* --------- HEADER ---------- */
+header {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.menu-top{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 1.25em;
+}
+
+.menu-top ul {
+    display: flex;
+    gap: 1.65em;
+}
+
+.menu-top li {
+    display: flex;
+    align-items: center;
+}
+
+.menu-top li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.menu-top li a:hover {
+    text-decoration: underline;
+}
+
+.menu-top .signin-btn a {
+    background-color: var(--btn-color);
+    color: var(--text-color-white);
+    padding: 8px 16px;
+}
+
+.menu-top .signin-btn a:hover {
+    background-color: var(--btn-color-hover);
+    text-decoration: none;
+}
+
+
+
+
+
+
