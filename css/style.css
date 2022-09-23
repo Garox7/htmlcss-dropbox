@@ -23,7 +23,6 @@ html {
 
 body {
     margin-top: 70px;
-    padding: 0 10px;
 }
 
 h2 {
@@ -110,6 +109,19 @@ img {
 
 .btn-secondary:hover {
     background-color: var(--btn-color-hover);
+}
+
+.btn-transparent {
+    text-decoration: none;
+    color: var(--text-color-grey);
+    border: 1px solid var(--text-color-grey);
+    padding: .65em 1.65em;
+}
+
+.btn-transparent:hover {
+    background-color: var(--btn-color-hover);
+    color: var(--text-color-white);
+    border: 1px solid var(--btn-color);
 }
 
 /* --------- HEADER ---------- */
@@ -237,6 +249,7 @@ h2.title-plan {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
+    row-gap: 40px;
 }
 
 .plan-choise {
@@ -311,4 +324,21 @@ h2.title-plan {
 
 .plan-cta {
     flex: 1 1 200px;
+}
+
+/* -------- SECTION PARTNER (3 SECTION) --------- */
+.section-partner {
+    margin-top: 150px;
+}
+
+.section-partner .ti-partner {
+    gap: 45px;
+}
+
+.ti-partner .partner-text {
+    margin-top: 50px;
+}
+
+.ti-partner .partner-text h3 {
+    margin-bottom: 15px;
 }
