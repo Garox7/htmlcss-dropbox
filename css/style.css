@@ -27,6 +27,7 @@ body {
 
 h2 {
     font-size: 2.5em;
+    font-weight: 600;
 }
 
 h3 {
@@ -363,4 +364,18 @@ h2.title-plan {
 
 .features-cards .card h3 {
     margin-bottom: 30px;
+}
+
+/* ------- SECTION BUSINESS CLIENT ----------- */
+.business-client {
+    padding-top: 30px;
+}
+
+.business-client h2 {
+    margin-bottom: 60px;
+}
+
+.business-client a {
+    color: var(--btn-color);
+    
 }
