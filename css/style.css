@@ -44,11 +44,15 @@ p, a {
     font-weight: 300;
 }
 
-img {
+img:not(img>.square-item) {
     width: 100%;
 }
 
 /* -------- IMPOSTAZIONI CONTAINER ---------  */
+.full-width {
+    width: 100%;
+}
+
 .large-row {
     max-width: 1000px;
     margin: 0 auto;
@@ -377,5 +381,85 @@ h2.title-plan {
 
 .business-client a {
     color: var(--btn-color);
-    
+}
+
+/* ------ SECTION PARTNER FLEX --------- */
+.partner-layout {
+    display: flex;
+    height: 30vw;
+}
+
+.square-layout {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+    height: 100%;
+}
+
+.square-layout .square-item {
+    flex: 1 1 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.square-layout .square-item img {
+    filter: invert(100%);
+    width: 50%;
+}
+
+.big-item {
+    padding: 40px;
+    flex: 1 1;
+    background-color: var(--bg-grey);
+}
+
+
+.big-item .big-logo {
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.big-item hr {
+    width: 20%;
+    border: 1px solid var(--border-color);
+    margin-bottom: 40px;
+}
+
+.big-item p {
+    margin-bottom: 45px;
+}
+
+/* ------ COLOR SQUARE --------- */
+.square-layout .square-item.green {
+    border: 10px solid #D1E9CD;
+    background-color: #A2D39B;
+}
+
+.square-layout .square-item.bordeaux {
+    background-color: #61082B;
+}
+
+.square-layout .square-item.azure {
+    background-color: #0093CE;
+}
+
+.square-layout .square-item.lightred{
+    background-color: #FF1C1C;
+}
+
+.square-layout .square-item.red {
+    background-color: #D5001F;
+}
+
+.square-layout .square-item.lightazure {
+    background-color: #B4D0E7;
+}
+
+.square-layout .square-item.blue {
+    background-color: #0D2481;
+}
+
+.square-layout .square-item.yellow {
+    background-color: #FFD830;
 }
