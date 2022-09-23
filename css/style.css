@@ -23,10 +23,29 @@ html {
 
 body {
     margin-top: 70px;
+    padding: 0 10px;
 }
 
-p {
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.65em;
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+p, a {
     font-weight: 300;
+}
+
+img {
+    width: 100%;
 }
 
 /* -------- IMPOSTAZIONI CONTAINER ---------  */
@@ -102,6 +121,7 @@ header {
     left: 0;
     right: 0;
     z-index: 10;
+    box-shadow: 3px 0 5px 2px rgba(0, 0, 0, 0.10);
 }
 
 .menu-top{
@@ -122,6 +142,7 @@ header {
 }
 
 .menu-top li a {
+    font-weight: 300;
     text-decoration: none;
     color: var(--text-color);
 }
@@ -178,27 +199,19 @@ h1.hero-title {
 
 }
 
-.text-img .details .icon-dwn {
-    font-size: 2.25em;
-    cursor: pointer;
-}
-
 .text-img .details .icon-dwn i {
     color: var(--text-color);
+    font-size: 2.25em;
+    cursor: pointer;
 }
 
 .text-img .hero-img {
     flex: 2 1 400px;
 }
 
-.hero-img img {
-    width: 100%;
-}
-
 /* -------- PLAN CHOISE -------- */
 
 h2.title-plan {
-    font-size: 2.5em;
     margin-top: 100px;
     margin-bottom: 40px;
 }
@@ -252,8 +265,6 @@ h2.title-plan {
 }
 
 .plan-name h3 {
-    font-size: 1.65em;
-    font-weight: 600;
     margin-bottom: 15px;
 }
 
@@ -276,7 +287,7 @@ h2.title-plan {
     margin-bottom: 15px;
 }
 
-.plan-cta a:last-child {
+.plan-cta a:not(.btn-secondary) {
     color: #3984ff;
 }
 
@@ -286,10 +297,18 @@ h2.title-plan {
 }
 
 .plan-features h4 {
-    font-weight: 600;
     margin-bottom: 40px;
 }
 
 .plan-features i {
     color: var(--btn-color);
+}
+
+/* -------- FULL WIDTH PLAN CHOISE -------- */
+.plan-name {
+    flex: 3 1 400px;
+}
+
+.plan-cta {
+    flex: 1 1 200px;
 }
