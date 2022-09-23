@@ -1,6 +1,8 @@
 :root {
-    --text-color: #1e1919;
+    --text-color: #272727;
     --text-color-white: #f7f5f2;
+    --text-color-grey: #707070;
+    --border-color: #7070703b;
     --bg-black: #000000;
     --bg-azure: #B4D0E7;
     --bg-grey: #f7f5f2;
@@ -16,16 +18,51 @@
 
 html {
     font-family: 'Blinker', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     margin-top: 70px;
 }
 
-/* IMPOSTAZIONI CONTAINER  */
+p {
+    font-weight: 300;
+}
+
+/* -------- IMPOSTAZIONI CONTAINER ---------  */
 .large-row {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+.small-row {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* -------- MARGIN -------- */
+.margin-t20 {
+    margin-top: 20px;
+}
+
+.margin-b20 {
+    margin-bottom: 20px;
+}
+
+.margin-t30 {
+    margin-top: 30px;
+}
+
+.margin-b30 {
+    margin-bottom: 30px;
+}
+
+.margin-t40 {
+    margin-top: 40px;
+}
+
+.margin-b40 {
+    margin-bottom: 40px;
 }
 
 /* -------- IMPOSTAZIONI BOTTONI -------- */
@@ -41,6 +78,20 @@ body {
     background-color: var(--btn-color-hover);
 }
 
+.btn-secondary {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    background-color: var(--btn-color);
+    color: var(--text-color-white);
+    padding: .65em 0;
+}
+
+.btn-secondary:hover {
+    background-color: var(--btn-color-hover);
+}
 
 /* --------- HEADER ---------- */
 header {
@@ -100,7 +151,7 @@ header {
     padding-top: 60px;
 }
 
-.hero-title h1 {
+h1.hero-title {
     font-size: 4.75em;
 }
 
@@ -142,4 +193,103 @@ header {
 
 .hero-img img {
     width: 100%;
+}
+
+/* -------- PLAN CHOISE -------- */
+
+h2.title-plan {
+    font-size: 2.5em;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.biling-radio>span {
+    margin-right: 2em;
+}
+
+.biling-radio span input {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.biling-radio span label {
+    color: var(--text-color);
+    vertical-align: middle;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.plan-choise {
+    border: 1.5px solid var(--border-color);
+    color: var(--text-color);
+    flex: 1 0 250px;
+}
+
+.plan-head {
+    text-align: center;
+}
+
+.plan-head p {
+    padding: .5em 0;
+    border-bottom: 1.5px solid var(--border-color);
+}
+
+.plan-choise i {
+    margin-top: .12em;
+    margin-right: .4em;
+    color: #000000;
+}
+
+.plan-body {
+    padding: 2.5em 1.75em;
+}
+
+.plan-name h3 {
+    font-size: 1.65em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.plan-name p.price {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.plan-name .frequency-pay {
+    font-weight: 300;
+    color: #707070;
+}
+
+.plan-functions {
+    margin-top: 40px;
+}
+
+.plan-functions>li, .plan-features>li {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.plan-cta a:last-child {
+    color: #3984ff;
+}
+
+.plan-choise hr {
+    width: 20%;
+    border: 1px solid var(--border-color);
+}
+
+.plan-features h4 {
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.plan-features i {
+    color: var(--btn-color);
 }
