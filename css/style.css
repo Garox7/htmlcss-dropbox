@@ -2,6 +2,7 @@
     --text-color: #272727;
     --text-color-white: #f7f5f2;
     --text-color-grey: #707070;
+    --text-color-brown: #61082B;
     --border-color: #7070703b;
     --bg-black: #000000;
     --bg-azure: #B4D0E7;
@@ -133,6 +134,18 @@ img:not(img>.square-item) {
     background-color: var(--btn-color-hover);
     color: var(--text-color-white);
     border: 1px solid var(--btn-color);
+}
+
+.btn-white {
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--text-color-white);
+    padding: .65em 2.65em;
+}
+
+.btn-white:hover {
+    background-color: var(--btn-color-hover);
+    color: var(--text-color-white);
 }
 
 /* --------- HEADER ---------- */
@@ -386,7 +399,7 @@ h2.title-plan {
 /* ------ SECTION PARTNER FLEX --------- */
 .partner-layout {
     display: flex;
-    height: 30vw;
+    height: 33vw;
 }
 
 .square-layout {
@@ -401,6 +414,7 @@ h2.title-plan {
     height: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .square-layout .square-item img {
@@ -463,3 +477,19 @@ h2.title-plan {
 .square-layout .square-item.yellow {
     background-color: #FFD830;
 }
+
+/* ---------- TRIAL SECTION ---------- */
+.trial-section {
+    background-color: var(--bg-azure);
+}
+
+.trial-section .flex {
+    padding: 100px 0;
+    align-items: flex-start;
+}
+
+.trial-section h2 {
+    color: var(--text-color-brown);
+}
+
+
