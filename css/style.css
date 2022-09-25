@@ -509,6 +509,7 @@ summary {
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
     border-bottom-style: none;
+    cursor: pointer;
     /* transition: height 1s ease; */
 }
 
@@ -542,3 +543,65 @@ details div a {
     border-bottom: 1px solid var(--border-color);;
 }
 
+/* -------- FOOTER -------- */
+footer {
+    color: var(--text-color-white);
+    background-color: var(--bg-black);
+    padding: 80px 0;
+}
+
+.menu-footer {
+    padding-bottom: 40px;
+}
+
+.menu-footer h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.menu-footer li {
+    list-style: none;
+    margin-bottom: .5em;
+}
+
+.menu-footer a {
+    font-size: 14px;
+    color: var(--text-color-white);
+    text-decoration: none;
+}
+
+.menu-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom .social-icon {
+    margin-bottom: 20px;
+}
+
+.footer-bottom .social-icon i {
+    font-size: 22px;
+    margin-right: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom .social-icon i:hover {
+    background-color: var(--text-color);
+}
+
+.footer-bottom .dividing-line {
+    width: 15%;
+    border: 1px solid var(--text-color-white);
+    margin-bottom: 20px;
+}
+
+.footer-bottom .lang-set {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom .lang-set > p:hover {
+    text-decoration: underline;
+}
