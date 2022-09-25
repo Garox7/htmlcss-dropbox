@@ -492,4 +492,53 @@ h2.title-plan {
     color: var(--text-color-brown);
 }
 
+/* -------- FAQ SECTION --------- */
+.faq-section h2 {
+    margin-bottom: 40px;
+}
+
+details {
+    width: 100%;
+}
+
+summary {
+    padding: 1.5em 1.5em 1.5em 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;  
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-bottom-style: none;
+    /* transition: height 1s ease; */
+}
+
+summary > p {
+    font-weight: 600;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:after{
+    content: "\002B";
+}
+
+details[open] summary:after{
+    content: "\00D7";
+}
+
+details[open] div{
+    padding: 1.5em ;
+    background-color: var(--bg-grey);
+
+}
+
+details div a {
+    color: #000000;
+}
+
+.border-btn {
+    border-bottom: 1px solid var(--border-color);;
+}
 
