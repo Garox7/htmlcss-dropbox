@@ -198,7 +198,7 @@ header {
     text-decoration: none;
 }
 
-/* -------- HERO SECTION --------- */
+/* -------- 1 HERO SECTION --------- */
 .hero-section {
     background-color: var(--bg-azure);
     height: 600px;
@@ -245,7 +245,7 @@ h1.hero-title {
     flex: 2 1 400px;
 }
 
-/* -------- PLAN CHOISE -------- */
+/* -------- 2 PLAN CHOISE -------- */
 h2.title-plan {
     margin-bottom: 40px;
 }
@@ -339,7 +339,7 @@ h2.title-plan {
     color: var(--btn-color);
 }
 
-/* -------- FULL WIDTH PLAN CHOISE -------- */
+/* -------- 2b FULL WIDTH PLAN CHOISE -------- */
 .plan-name {
     flex: 3 1 400px;
 }
@@ -348,10 +348,7 @@ h2.title-plan {
     flex: 1 1 200px;
 }
 
-/* -------- SECTION PARTNER (3 SECTION) --------- */
-.section-partner {
-}
-
+/* -------- 3 SECTION PARTNER --------- */
 .section-partner .ti-partner {
     gap: 45px;
 }
@@ -364,7 +361,7 @@ h2.title-plan {
     margin-bottom: 15px;
 }
 
-/* ---------- SECTION FEATURES CARDS ----------- */
+/* ---------- 4 SECTION FEATURES CARDS ----------- */
 .features-cards h2 {
     margin-bottom: 45px;
 }
@@ -375,7 +372,7 @@ h2.title-plan {
 }
 
 .features-cards .card {
-    flex: 1 1 25vh;
+    flex: 1 1 250px;
     color: var(--text-color);
 }
 
@@ -383,7 +380,7 @@ h2.title-plan {
     margin-bottom: 30px;
 }
 
-/* ------- SECTION BUSINESS CLIENT ----------- */
+/* ------- 5 SECTION BUSINESS CLIENT ----------- */
 .business-client {
     padding-top: 30px;
 }
@@ -396,7 +393,7 @@ h2.title-plan {
     color: var(--btn-color);
 }
 
-/* ------ SECTION PARTNER FLEX --------- */
+/* ------ 6 SECTION PARTNER FLEX --------- */
 .partner-layout {
     display: flex;
     height: 33vw;
@@ -426,8 +423,8 @@ h2.title-plan {
     padding: 40px;
     flex: 1 1;
     background-color: var(--bg-grey);
+    overflow: auto;
 }
-
 
 .big-item .big-logo {
     width: 50%;
@@ -444,7 +441,7 @@ h2.title-plan {
     margin-bottom: 45px;
 }
 
-/* ------ COLOR SQUARE --------- */
+/* ------ 6b COLOR SQUARE --------- */
 .square-layout .square-item.green {
     border: 10px solid #D1E9CD;
     background-color: #A2D39B;
@@ -478,7 +475,7 @@ h2.title-plan {
     background-color: #FFD830;
 }
 
-/* ---------- TRIAL SECTION ---------- */
+/* ---------- 7 TRIAL SECTION ---------- */
 .trial-section {
     background-color: var(--bg-azure);
 }
@@ -492,7 +489,7 @@ h2.title-plan {
     color: var(--text-color-brown);
 }
 
-/* -------- FAQ SECTION --------- */
+/* -------- 8 FAQ SECTION --------- */
 .faq-section h2 {
     margin-bottom: 40px;
 }
@@ -510,7 +507,6 @@ summary {
     border-bottom: 1px solid var(--border-color);
     border-bottom-style: none;
     cursor: pointer;
-    /* transition: height 1s ease; */
 }
 
 summary > p {
@@ -522,17 +518,19 @@ summary::-webkit-details-marker {
 }
 
 summary:after{
-    content: "\002B";
+    content: "\2303";
+    transform: rotate(270deg);
+    transition: .25s transform ease;
 }
 
 details[open] summary:after{
-    content: "\00D7";
+    content: "\2303";
+    transform: rotate(180deg);
 }
 
 details[open] div{
     padding: 1.5em ;
     background-color: var(--bg-grey);
-
 }
 
 details div a {
@@ -540,7 +538,7 @@ details div a {
 }
 
 .border-btn {
-    border-bottom: 1px solid var(--border-color);;
+    border-bottom: 1px solid var(--border-color);
 }
 
 /* -------- FOOTER -------- */
