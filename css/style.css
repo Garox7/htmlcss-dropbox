@@ -544,6 +544,7 @@ footer {
 
 .menu-footer {
     padding-bottom: 40px;
+    justify-content: space-between;
 }
 
 .menu-footer h3 {
