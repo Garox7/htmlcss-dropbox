@@ -71,14 +71,6 @@ img:not(img>.square-item) {
 }
 
 /* -------- MARGIN -------- */
-.margin-t20 {
-    margin-top: 20px;
-}
-
-.margin-b20 {
-    margin-bottom: 20px;
-}
-
 .margin-t30 {
     margin-top: 30px;
 }
@@ -160,8 +152,11 @@ header {
     box-shadow: 3px 0 5px 2px rgba(0, 0, 0, 0.10);
 }
 
-.menu-top{
+.flex {
     display: flex;
+}
+
+.menu-top{
     justify-content: space-between;
     height: 100%;
     margin: 0 1.25em;
@@ -213,9 +208,8 @@ h1.hero-title {
 }
 
 .text-img {
-    margin-top: 40px;
-    display: flex;
     flex-wrap: wrap;
+    margin-top: 40px;
     gap: .5em;
 }
 
@@ -231,7 +225,6 @@ h1.hero-title {
 
 .text-img .details .text-link {
     display: inline-block;
-    margin: 30px 0 40px;
 
 }
 
@@ -266,8 +259,7 @@ h2.title-plan {
     vertical-align: middle;
 }
 
-.flex {
-    display: flex;
+.plan-container {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
@@ -326,7 +318,7 @@ h2.title-plan {
     color: #3984ff;
 }
 
-.plan-choise hr {
+.plan-choise .divider {
     width: 20%;
     border: 1px solid var(--border-color);
 }
@@ -349,7 +341,7 @@ h2.title-plan {
 }
 
 /* -------- 3 SECTION PARTNER --------- */
-.section-partner .ti-partner {
+.section-partner .text-img {
     gap: 45px;
 }
 
@@ -367,6 +359,7 @@ h2.title-plan {
 }
 
 .features-cards .cards-body {
+    flex-wrap: wrap;
     gap: 40px;
     row-gap: 50px;
 }
@@ -483,6 +476,7 @@ h2.title-plan {
 .trial-section .flex {
     padding: 100px 0;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .trial-section h2 {
